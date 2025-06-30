@@ -6,7 +6,8 @@ import pyautogui
 def send_whatsapp_message(phone_number: str, message: str):
     try:
         print(f"📨 Opening WhatsApp chat for {phone_number}")
-        pywhatkit.sendwhatmsg_instantly(    
+        pywhatkit.sendwh
+        atmsg_instantly(    
             phone_no=phone_number,
             message=message,
             wait_time=20,
@@ -25,3 +26,4 @@ def send_whatsapp_message(phone_number: str, message: str):
         print(f"❌ Error sending to {phone_number}: {e}")
         return False
     
+

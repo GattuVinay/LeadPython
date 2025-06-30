@@ -16,7 +16,7 @@ async def monitor_and_reply():
         print("🔁 Monitoring every 5 minutes...")
         while True:
             try:
-                chats = await page.query_selector_all("div._2aBzC")  # all chat rows
+                chats = await page.query_selector_all("div._2aBzC") 
                 for chat in chats:
                     unread = await chat.query_selector("span[aria-label*='unread message']")
                     if unread:
